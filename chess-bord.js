@@ -17,19 +17,30 @@
 
 // 
 
-let num = prompt('Chose area of board') // Get input to determine board size
-rowString = "";
+// let num = prompt('Chose area of board') // Get input to determine board size
+// rowString = "";
 
-for (let heigth = 0; heigth < num; heigth++) {
-  for (let width = 0; width < num; width++) {
-    if ((heigth + width) % 2 === 0) {
-      rowString += "# ";
-    }
-    else {
-      rowString += " ";
-    }
+// for (let heigth = 0; heigth < num; heigth++) {
+//   for (let width = 0; width < num; width++) {
+//     if ((heigth + width) % 2 === 0) {
+//       rowString += "# ";
+//     }
+//     else {
+//       rowString += " ";
+//     }
+//   }
+//   rowString += "\n";
+// }
+
+// console.log(rowString);
+
+var hash = ' # #';
+var rehash = '# # ';
+for (var i = 1; i < 9; i++) {
+  if (i % 2 === 0) {
+    console.log(rehash + rehash);
   }
-  rowString += "\n";
+  else {
+    console.log(hash + hash);
+  }
 }
-
-console.log(rowString);
