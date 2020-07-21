@@ -14,12 +14,12 @@
 
 // 2-Drugin nacin
 
-for (let num =1;num <= 100;num++) {
-  console.log(num % 3 === 0 && num % 5 === 0 ? 'FizzBuzz' : (num % 3 === 0 ? 'Fizz' :
-  (num % 5 === 0 && num % 3!= 0 ? 'Buzz':num )));
-}
+// for (let num =1;num <= 100;num++) {
+//   console.log(num % 3 === 0 && num % 5 === 0 ? 'FizzBuzz' : (num % 3 === 0 ? 'Fizz' :
+//   (num % 5 === 0 && num % 3!= 0 ? 'Buzz':num )));
+// }
 
 // 3-Treci nacin
 
-// [...Array(100).keys()].map(n => n + 1).map(n =>(n % 3 ? "" : "Fizz") + 
-// (n % 5 ? "" : "Buzz") || n).join("\n")
+[...Array(100).keys()].map(n => n + 1).map(n =>(n % 3 ? "" : "Fizz") + 
+(n % 5 ? "" : "Buzz") || n).join("\n")
